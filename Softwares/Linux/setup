@@ -1,0 +1,4 @@
+wget https://dl.teamviewer.com/download/linux/version_15x/teamviewer_15.46.5_amd64.deb
+sudo apt install ./teamviewer_15.46.5_amd64.deb
+
+
