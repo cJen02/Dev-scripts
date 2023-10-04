@@ -1,0 +1,9 @@
+# Python tools
+sudo apt install python3-pip
+snap install jupyter
+jupyter notebook 
+jupyter lab
+
+
+
+# 
