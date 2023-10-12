@@ -1,0 +1,18 @@
+cd /etc/systemd/system/
+sudo nano assistance.service
+
+"""
+[Unit]
+Description=Description of your script
+After=network.target
+
+[Service]
+ExecStart=/path/to/script arg1 arg2
+Restart=always
+User=root
+Group=root
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+"""
