@@ -15,7 +15,7 @@ sudo usermod -a -G gpio {username}
 
 
 ## Install VScode
-VERSION=1.94.2
+VERSION=1.85.2
 wget -N -O vscode-linux-deb.arm64.deb https://update.code.visualstudio.com/$VERSION/linux-deb-arm64/stable
 sudo apt install ./vscode-linux-deb.arm64.deb
 
