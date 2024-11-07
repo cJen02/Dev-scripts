@@ -14,10 +14,17 @@ sudo pip3 install Jetson.GPIO
 sudo groupadd -f -r gpio
 sudo usermod -a -G gpio {username}
 
-## VNC setup
+## VNC setup - https://developer.nvidia.com/embedded/learn/tutorials/vnc-setup
 mkdir -p ~/.config/autostart
+cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
+Set a password to access the VNC server
 
-
+# Replace thepassword with your desired password
+gsettings set org.gnome.Vino authentication-methods "['vnc']"
+gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+sudo
 
 ## Install VScode
 VERSION=1.85.2
