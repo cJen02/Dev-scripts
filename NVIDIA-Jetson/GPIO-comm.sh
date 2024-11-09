@@ -55,3 +55,6 @@ except KeyboardInterrupt:
 """
 
 
+## Load SPI drivers if needed
+sudo modprobe spidev
+
