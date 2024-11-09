@@ -5,7 +5,7 @@ sudo apt-get -y install python3-pip
 sudo pip3 install Jetson.GPIO
 
 ## install SPI utils
-wget https://forums.developer.nvidia.com/uploads/short-url/pHU1lykUAqfxJqx3MMhPfxFY9hu.dtb -o nano-spi.dtb
+wget -O nano-spi.dtb https://forums.developer.nvidia.com/uploads/short-url/pHU1lykUAqfxJqx3MMhPfxFY9hu.dtb
 sudo cp nano-spi.dtb /boot/
 
 sudo apt-get install nano
@@ -58,3 +58,11 @@ except KeyboardInterrupt:
 ## Load SPI drivers if needed
 sudo modprobe spidev
 
+
+### Jetson Nano SPI slave
+
+"""
+Edit in the dts file as the following - https://forums.developer.nvidia.com/t/spi-slave-for-l4t-r28-1/55401#5221958
+>>> compatible = "nvidia,tegra210-spi"; 
+
+"""
