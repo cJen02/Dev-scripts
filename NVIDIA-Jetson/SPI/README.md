@@ -6,4 +6,7 @@
 
 
 
-Ref - https://jetsonhacks.com/2020/05/04/spi-on-jetson-using-jetson-io/
+Ref:
+- https://github.com/JetsonHacksNano/SPI-Playground
+- https://jetsonhacks.com/2020/05/04/spi-on-jetson-using-jetson-io/
+- 
