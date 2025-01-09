@@ -6,7 +6,18 @@
 
 `sudo cat /sys/kernel/debug/tegra_pinctrl_reg | grep -i spi`
 
+`sudo modprobe spidev`
+
+`wget https://raw.githubusercontent.com/torvalds/linux/v4.9/tools/spi/spidev_test.c`
+
+`gcc -o spidev_test spidev_test.c`
+
+`sudo ./spidev_test -D /dev/spidev0.0 -v -p "HelloWorld123456789abcdef"`
+
+`sudo ./spidev_test -D /dev/spidev0.0 -s 10000000 -v`
+
+
 Ref:
 - https://github.com/JetsonHacksNano/SPI-Playground
 - https://jetsonhacks.com/2020/05/04/spi-on-jetson-using-jetson-io/
-- 
+- https://forums.developer.nvidia.com/t/jetson-nano-spi-bus-not-working/249482/10
