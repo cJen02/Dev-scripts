@@ -12,7 +12,7 @@ spi.max_speed_hz = 500000
 
 try:
   while True:
-    print(“abc”)
+    print("abc")
     resp = spi.xfer2([0x61,0x62,0x63,0xA]) # [‘a’,‘b’,‘c’,‘\n’]
     time.sleep(1) # sleep for 1 seconds
 except KeyboardInterrupt:
