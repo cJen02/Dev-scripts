@@ -21,3 +21,6 @@ Ref:
 - https://github.com/JetsonHacksNano/SPI-Playground
 - https://jetsonhacks.com/2020/05/04/spi-on-jetson-using-jetson-io/
 - https://forums.developer.nvidia.com/t/jetson-nano-spi-bus-not-working/249482/10
+- 
+- https://forums.developer.nvidia.com/t/how-can-i-enable-spi-communication-on-jetson-nano-module/229228/6
+
