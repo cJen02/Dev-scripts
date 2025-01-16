@@ -3,8 +3,8 @@ import time
 
 # Define GPIO pins for SPI
 SCK_PIN = 11     # Serial Clock from Master
-MOSI_PIN = 13    # Master Out Slave In
-MISO_PIN = 15    # Master In Slave Out
+MISO_PIN = 13    # Master In Slave Out
+MOSI_PIN = 15    # Master Out Slave In
 SS_PIN = 16      # Slave Select from Master
 
 # SPI Parameters
