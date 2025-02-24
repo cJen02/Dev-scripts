@@ -8,13 +8,13 @@
 nvcc --version
 
 # Test running a basic NVIDIA container
-docker run --rm --runtime=nvidia --gpus all nvcr.io/nvidia/l4t-base:r35.2.1 bash -c "echo GPU is accessible"
+sudo docker run --rm --runtime=nvidia --gpus all nvcr.io/nvidia/l4t-base:r35.2.1 bash -c "echo GPU is accessible"
 
 # Now setup the ML image of dusty-nv provided by nvidia zoo
-docker run --rm --runtime=nvidia --gpus all -it -p 8888:8888 nvcr.io/nvidia/l4t-ml:r35.2.1-py3
+sudo docker run --rm --runtime=nvidia --gpus all -it -p 8888:8888 nvcr.io/nvidia/l4t-ml:r35.2.1-py3
 
 # Persist Data with a Mounted Volume To save files after stopping the container:
-docker run --runtime=nvidia --gpus all -it -v ~/ml_workspace:/workspace nvcr.io/nvidia/l4t-ml:r35.2.1-py3
+sudo docker run --runtime=nvidia --gpus all -it -v ~/ml_workspace:/workspace nvcr.io/nvidia/l4t-ml:r35.2.1-py3
 
 
 # Install VSCode for code support
