@@ -1,0 +1,19 @@
+{
+  "name": "Jetson Nano Dev Container",
+  "image": "nvcr.io/nvidia/l4t-ml:r35.2.1-py3",
+  "runArgs": [
+    "--runtime=nvidia",
+    "--network=host",
+    "--gpus=all",
+    "--privileged",
+    "--env=DISPLAY"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/EXO_ML,type=bind",
+  "workspaceFolder": "/workspace/EXO_ML",
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip3 install --upgrade pip && pip3 install torch stable_baselines3 transformers numpy matplotlib",
+  "remoteUser": "root"
+}
