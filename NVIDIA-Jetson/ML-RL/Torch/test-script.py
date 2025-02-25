@@ -32,6 +32,10 @@ for epoch in range(epochs):
     if epoch % 10 == 0:
         print(f"Epoch {epoch}, Loss: {loss.item():.4f}")
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+X_train, y_train = X_train.to(device), y_train.to(device)
+
 # Test the model
 X_test = torch.tensor([[5.0]], dtype=torch.float32)
 y_pred = model(X_test).item()
