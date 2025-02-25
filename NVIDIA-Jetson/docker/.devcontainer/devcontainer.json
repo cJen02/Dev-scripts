@@ -1,6 +1,6 @@
 {
   "name": "Jetson Nano Dev Container",
-  "image": "nvcr.io/nvidia/l4t-ml:r35.2.1-py3",
+  "image": "nvcr.io/nvidia/l4t-ml:r32.7.1-py3",
   "runArgs": [
     "--runtime=nvidia",
     "--network=host",
